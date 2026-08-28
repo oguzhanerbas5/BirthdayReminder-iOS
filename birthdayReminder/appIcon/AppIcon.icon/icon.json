@@ -1,0 +1,89 @@
+{
+  "fill" : {
+    "solid" : "srgb:1.00000,0.43598,0.23922,1.00000"
+  },
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "Adsız tasarım (8).png",
+          "name" : "Adsız tasarım (8)",
+          "position" : {
+            "scale" : 0.12,
+            "translation-in-points" : [
+              277.7223357192995,
+              142.88176775320653
+            ]
+          }
+        },
+        {
+          "image-name" : "Adsız tasarım (6).png",
+          "name" : "Adsız tasarım (6)",
+          "position" : {
+            "scale" : 0.11,
+            "translation-in-points" : [
+              -270.3782328670712,
+              161.0317677532065
+            ]
+          }
+        },
+        {
+          "blend-mode" : "normal",
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "Adsız tasarım (5).png",
+          "name" : "Adsız tasarım (5)",
+          "position" : {
+            "scale" : 0.14,
+            "translation-in-points" : [
+              2.366767132928885,
+              0.39051032396469054
+            ]
+          }
+        },
+        {
+          "blend-mode" : "normal",
+          "fill" : {
+            "linear-gradient" : [
+              "srgb:0.75839,0.32446,0.81238,1.00000",
+              "srgb:1.00000,0.73033,0.17136,1.00000"
+            ],
+            "orientation" : {
+              "start" : {
+                "x" : 0.5,
+                "y" : 0.3521953398044968
+              },
+              "stop" : {
+                "x" : 0.5,
+                "y" : 0.6971486231848805
+              }
+            }
+          },
+          "image-name" : "Gemini_Generated_Image_75eud575eud575eu.png",
+          "name" : "Gemini_Generated_Image_75eud575eud575eu",
+          "position" : {
+            "scale" : 1.65,
+            "translation-in-points" : [
+              -10.714835429445202,
+              235.0735544827951
+            ]
+          }
+        }
+      ],
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}
