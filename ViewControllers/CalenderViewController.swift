@@ -113,7 +113,9 @@ extension CalenderViewController: UICalendarViewDelegate, UICalendarSelectionSin
         }
 
         if !dayBirthdays.isEmpty {
-            return .image(UIImage(systemName: "birthday.cake.fill"), color: AppColors.richLeafGreen, size: .medium)
+            let config = UIImage.SymbolConfiguration(pointSize: 12, weight: .semibold)
+            let image = UIImage(systemName: "birthday.cake.fill", withConfiguration: config)
+            return .image(image, color: AppColors.richLeafGreen, size: .large)
         }
         return nil
     }
