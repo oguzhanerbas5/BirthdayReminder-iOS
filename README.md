@@ -1,60 +1,47 @@
-🎂 Birthday Reminder
+# 🎂 Birthday Reminder
 
-A UIKit-based iOS app for managing birthdays, preparing messages, and receiving reminders.
+A modern, native UIKit-based iOS application for managing birthdays, scheduling custom local reminders, preparing celebration messages, and tracking upcoming dates.
 
-🚀 About the Project
+---
 
-Birthday Reminder is a native iOS application designed to help users remember their friends’ and loved ones’ birthdays.
+## 🚀 Key Features
 
-Users can save birthdays, prepare messages in advance, and receive notifications when an important date is approaching.
+* **🎂 Birthday Management & Local Storage (Core Data)**
+  * Save, edit, and delete birthdays with persistent Core Data storage.
+  * Automatic sorting by upcoming birthdays.
 
-This project is being developed as a learning project to improve my UIKit and native iOS development skills.
+* **🔔 Custom Local Notifications**
+  * Schedule annual repeating local notifications at a custom time (hour & minute) tailored for each person.
+  * Instant permission management via `UserNotifications`.
 
-✨ Planned Features
+* **🔍 Search & Filtering**
+  * Live search bar to filter birthdays by name or birth month.
 
-* 🎂 Add and manage birthdays
-* 📅 View upcoming birthdays
-* 🗓️ Calendar view
-* 🔔 Local birthday reminders
-* 💬 Prepare birthday messages in advance
-* 📋 Copy prepared messages
-* ✏️ Edit birthdays
-* 🗑️ Delete birthdays
-* 💾 Persistent data storage
-* 🔎 Search birthdays
+* **💬 Ready Message Templates & Sharing**
+  * Quick-select message templates (Classic, Fun, Emotional) that dynamically fill recipient names.
+  * One-tap **Copy Message** to clipboard and **Share** via SMS, WhatsApp, Mail, and social apps (`UIActivityViewController`).
 
-🛠️ Technologies
+* **🗓️ Interactive Calendar View**
+  * Modern `UICalendarView` integration with custom pink badge decorations on birthday dates.
+  * Single date selection to view birthdays occurring on that specific day.
 
-* Swift
-* UIKit
-* Storyboard
-* Auto Layout
-* SwiftData
-* UserNotifications
-* Git & GitHub
+* **📱 Modern iOS UI & Aesthetics**
+  * UIKit, Auto Layout, SF Symbols, custom cards, initials avatar badges, countdown indicators ("🎉 BUGÜN!", "X gün kaldı").
 
-📚 Learning Goals
+---
 
-This project is being developed step by step to practice and improve:
+## 🛠️ Architecture & Technologies
 
-* UIKit fundamentals
-* Auto Layout
-* UITableView
-* UICollectionView
-* Navigation
-* Protocol & Delegate
-* Data passing between screens
-* Local Notifications
-* Data persistence
-* MVC / MVVM
-* Git & GitHub
+* **Swift 5** & **UIKit** (100% Programmatic UI with Auto Layout)
+* **Core Data** (`CoreDataManager` for persistent CRUD operations)
+* **UserNotifications** (`NotificationManager` for annual calendar notification triggers)
+* **UICalendarView** & **UITableView**
+* **MVC Pattern** & **Delegate Pattern** (`BirthdayDelegate`)
 
-🚧 Project Status
+---
 
-In Development 🚀
+## 📱 Tab Bar Structure
 
-New features and improvements will be added throughout the development process.
-
-📱 Screenshots
-
-Screenshots will be added as the project progresses.
+1. **Ana Sayfa (`HomeViewController`)**: List of upcoming birthdays, search bar, swipe-to-delete, empty state view.
+2. **Ekle (`AddBirthdayViewController`)**: Add/Edit birthday form with date picker, custom notification time picker, and preset templates.
+3. **Takvim (`CalenderViewController`)**: Visual calendar displaying marked birthday dates and daily breakdown.
